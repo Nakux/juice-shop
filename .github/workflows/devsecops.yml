@@ -1,0 +1,18 @@
+name: DevSecOps pipeline
+
+on:
+  # TODO : déclencher la pipeline à chaque push
+  # TODO : et aussi manuellement depuis l'onglet Actions
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Construire l'image Docker
+        run: # TODO : la même commande que sur ton PC, avec le tag juice-shop:ci
+
+      - name: Afficher les images
+        run: # TODO : la commande qui liste les images
