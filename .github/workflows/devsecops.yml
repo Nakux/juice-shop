@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Construire l'image Docker
-        run: docker build -t juice-shop:ci
+        run: docker build -t juice-shop:ci .
 
       - name: Afficher les images
         run: docker images
